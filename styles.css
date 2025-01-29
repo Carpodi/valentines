@@ -7,19 +7,21 @@ body {
     height: 100vh;
     background-color: #ffcccb;
     font-family: 'Arial', sans-serif;
+    position: relative;
 }
 
 .container {
     text-align: center;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     font-size: 2.5em;
     color: #e75480;
+    margin-bottom: 20px;
 }
 
 .buttons {
@@ -27,12 +29,13 @@ h1 {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1.2em;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin: 0 10px;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
 #siBtn {
@@ -40,7 +43,35 @@ button {
     color: white;
 }
 
+#siBtn:hover {
+    background-color: #d1426e;
+    transform: scale(1.1);
+}
+
 #noBtn {
     background-color: #ccc;
     color: black;
+}
+
+#noBtn:hover {
+    background-color: #bbb;
+    transform: scale(1.1);
+}
+.marca-de-agua {
+    position: fixed; 
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+}
+
+.marca-de-agua a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+.marca-de-agua a:hover {
+    color: #e75480; 
+    text-decoration: underline; 
 }
